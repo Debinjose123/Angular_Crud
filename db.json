@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Debin",
+      "lastName": "Jose ",
+      "email": "dj5449@srmist.edu.in",
+      "mobile": "7560964010",
+      "salary": "1500"
+    },
+    {
+      "id": 2,
+      "firstName": "anshad",
+      "lastName": "kaka",
+      "email": "anshad@gmail.com",
+      "mobile": "948597489",
+      "salary": "200"
+    },
+    {
+      "id": 4,
+      "firstName": "hisham",
+      "lastName": "mus",
+      "email": "hisham23@gmail.com",
+      "mobile": "456587985",
+      "salary": "2000"
+    },
+    {
+      "id": 5,
+      "firstName": "Swaroop",
+      "lastName": "ps",
+      "email": "ps123@gmail.com",
+      "mobile": "7898546523",
+      "salary": "874000"
+    },
+    {
+      "id": 6,
+      "firstName": "Mani",
+      "lastName": "kuttan",
+      "email": "mani@123",
+      "mobile": "5678909",
+      "salary": "100"
+    },
+    {
+      "id": 7,
+      "firstName": "Aravind",
+      "lastName": "Vs",
+      "email": "aravind123@gmail.com",
+      "mobile": "78965478",
+      "salary": "7800"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,92 @@
+<nav class="navbar navbar-light bg-success">
+  <div class="navbar-brand align-item-center d-flex">
+    <i style="font-size: 40px;" class="fas fa-graduation-cap  arrow-icon">&nbsp;
+    </i>
+    <strong style="font-size: 30px;">Employee-System</strong>
+    <div class="form-group">
+      <input class="form-control" type="text" name="firstName" [(ngModel)]="firstName" placeholder="search products"
+        (ngModelChange)='Search()'>
+    </div>
+  </div>
+  <div class="d-flex">
+    <button (click)=" clickAddEmployee()" type="button" class="btn btn-warning add" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">Add employee</button>
+  </div>
+</nav>
+<div class="conatiner col-12 mt-3 box-1">
+
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Employee Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email Id</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of employeeData">
+        <td>{{row.id}}</td>
+        <td>{{row.firstName}}</td>
+        <td>{{row.lastName}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.mobile}}</td>
+        <td>{{row.salary | currency : "INR"}}</td>
+        <td>
+          <!-- <button (click)="onEdit(row)" style="color: aliceblue;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button> -->
+          <button (click)="onEdit(row)" style="color: aliceblue;" type="button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+          <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">EMployee Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">First Name</label>
+            <input type="text" formControlName="firstName" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email ID</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+            <input type="text" formControlName="mobile" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Salary</label>
+            <input type="text" formControlName="salary" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)='postEmployeeDetails()' class="btn btn-primary">Add</button>
+        <button type="button" *ngIf="showUpdate" (click)="updateEmployeeDetails()"
+          class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

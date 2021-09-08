@@ -1,0 +1,42 @@
+.bg-nav
+{
+    color:aquamarine
+}
+
+.form-control {
+    border-radius: 3px;
+    width: 400px;
+    margin-left: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 53%;
+    top: 20px;
+    color: rgb(80, 80, 172);
+    cursor: pointer;
+}
+.arrow-icon
+{
+    color: #bc8e52
+}
+i{
+    margin:6px
+}
+.box-1
+{
+    width: 80%;
+    margin: 140px;
+
+}
+.add
+{
+    margin-right: 20px;
+}
+.navbar-light .navbar-brand {
+    color: beige;
+    font-family: sans-serif;
+    font-weight: bolder
+    ;
+}
