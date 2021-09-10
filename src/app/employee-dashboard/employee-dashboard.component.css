@@ -1,12 +1,10 @@
-.bg-nav
-{
-    color:aquamarine
-}
 
 .form-control {
     border-radius: 3px;
     width: 400px;
     margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .search-icon {
@@ -19,7 +17,8 @@
 }
 .arrow-icon
 {
-    color: #bc8e52
+    color: #768a9e;
+    margin-top: 10px;
 }
 i{
     margin:6px
@@ -37,6 +36,9 @@ i{
 .navbar-light .navbar-brand {
     color: beige;
     font-family: sans-serif;
-    font-weight: bolder
-    ;
+    font-weight: bolder;
+}
+.bg-header
+{
+    background-color:rgb(212,212,212)
 }

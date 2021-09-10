@@ -49,11 +49,34 @@
       "salary": "7800"
     }
   ],
-  "comments": [
+  "signupUsers": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "fullname": "leji",
+      "email": "lejimon@gmail.com",
+      "mobile": "7898789654",
+      "password": "leji123",
+      "id": 1
+    },
+    {
+      "fullname": "ambadi",
+      "email": "ambadi@gmail.com",
+      "mobile": "789789788",
+      "password": "ambadi123",
+      "id": 2
+    },
+    {
+      "fullname": "debin",
+      "email": "dj5449@srmist.edu.in",
+      "mobile": "+917560964010",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "fullname": "anshad",
+      "email": "anshad123@gmail.com",
+      "mobile": "+917560964010",
+      "password": "anshad",
+      "id": 4
     }
   ],
   "profile": {

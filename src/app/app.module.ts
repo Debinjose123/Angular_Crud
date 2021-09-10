@@ -10,11 +10,15 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { Ng2OrderModule } from 'ng2-order-pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
